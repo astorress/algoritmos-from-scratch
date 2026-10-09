@@ -1,0 +1,15 @@
+# Base: notebooks 01 a 09
+jupyter
+numpy
+scipy
+matplotlib
+plotly
+
+# Computación cuántica: notebooks 10 y 11
+qiskit
+qiskit-aer
+qiskit-ibm-runtime
+pylatexenc
+pennylane
+pennylane-qiskit
+torch
