@@ -2,13 +2,17 @@
 
 Notebooks de Jupyter para estudiar algoritmos desde cero: fundamentos de ciencias de la computación, análisis de complejidad, algoritmos clásicos, optimización, modelos generativos y computación cuántica.
 
-Cada notebook combina teoría (definiciones, notación matemática y análisis de complejidad), implementaciones en Python paso a paso y visualizaciones. Las notebooks se guardan con sus resultados ejecutados, así que se pueden leer directamente en GitHub sin correr nada.
+## Enfoque
 
-## Ruta de aprendizaje
+Cada notebook combina teoría (definiciones, notación matemática y análisis de complejidad), implementaciones en Python paso a paso y visualizaciones.
 
-Las notebooks están numeradas en el orden sugerido de estudio y agrupadas por área.
+Las notebooks se guardan con sus resultados ejecutados, así que se pueden leer directamente en GitHub.
 
-### 1. Fundamentos
+## Notebooks
+
+Las carpetas y las notebooks están numeradas en el orden sugerido de estudio.
+
+### 01 · Fundamentos
 
 | # | Notebook | Contenido |
 |---|----------|-----------|
@@ -16,7 +20,7 @@ Las notebooks están numeradas en el orden sugerido de estudio y agrupadas por �
 | 02 | [Complejidad Algorítmica](notebooks/01-fundamentos/02-complejidad-algoritmica.ipynb) | Notación asintótica, reglas de cálculo, conteo de operaciones, resolución de recurrencias, análisis empírico y complejidad espacial |
 | 03 | [Big O: análisis empírico](notebooks/01-fundamentos/03-big-o-analisis-empirico.ipynb) | Experimento que compara cuatro formas de sumar la diagonal de una matriz (bucles anidados, un bucle, comprensión de listas y NumPy) y ajusta curvas de complejidad a los tiempos medidos |
 
-### 2. Algoritmos clásicos
+### 02 · Algoritmos clásicos
 
 | # | Notebook | Contenido |
 |---|----------|-----------|
@@ -25,14 +29,14 @@ Las notebooks están numeradas en el orden sugerido de estudio y agrupadas por �
 | 06 | [Algoritmos de Grafos](notebooks/02-algoritmos-clasicos/06-algoritmos-grafos.ipynb) | Representaciones, BFS, DFS, Dijkstra, Bellman-Ford, Floyd-Warshall, Kruskal, Prim, orden topológico, ciclos, componentes conexas y grafos bipartitos |
 | 07 | [Algoritmos de Compresión](notebooks/02-algoritmos-clasicos/07-algoritmos-compresion.ipynb) | RLE, Huffman, LZW, Shannon-Fano, LZ77, codificación aritmética, entropía y límites teóricos |
 
-### 3. Optimización y modelos generativos
+### 03 · Optimización y modelos generativos
 
 | # | Notebook | Contenido |
 |---|----------|-----------|
 | 08 | [Algoritmos de Optimización](notebooks/03-optimizacion-y-modelos-generativos/08-algoritmos-optimizacion.ipynb) | Descenso del gradiente, método de Newton, SGD, Adam, recocido simulado, enjambre de partículas (PSO) y algoritmos genéticos |
 | 09 | [Modelos Generativos y Datos Sintéticos](notebooks/03-optimizacion-y-modelos-generativos/09-modelos-generativos-datos-sinteticos.ipynb) | GAN y variantes (WGAN, cGAN), VAE, Normalizing Flows, modelos de difusión, modelos para datos tabulares y métricas de evaluación |
 
-### 4. Computación cuántica
+### 04 · Computación cuántica
 
 | # | Notebook | Contenido |
 |---|----------|-----------|
@@ -67,18 +71,17 @@ pip install -r requirements.txt
 jupyter notebook
 ```
 
-Abre la notebook que quieras desde la carpeta `notebooks/` y ejecuta las celdas en orden.
-
-Si solo vas a usar las notebooks 01 a 09, basta con instalar la sección base de `requirements.txt` (`jupyter numpy scipy matplotlib plotly`). Las dependencias de computación cuántica (Qiskit, PennyLane y PyTorch) son más pesadas y solo las necesitan las notebooks 10 y 11.
+Abre cualquier notebook de la carpeta `notebooks/` y ejecuta las celdas en orden.
 
 También puedes abrir cualquier notebook en [Google Colab](https://colab.research.google.com): *File → Open notebook → GitHub* y pega la URL del repositorio.
 
-### Hardware cuántico real
+### Notas
 
-Las notebooks 10 y 11 corren en simuladores locales (Qiskit Aer y PennyLane). Las celdas que envían circuitos a hardware real de IBM necesitan un token de [IBM Quantum](https://quantum.ibm.com/account): reemplaza el marcador `TU_TOKEN_AQUI` o `PEGA_TU_TOKEN_AQUI` por el tuyo. No subas tu token al repositorio.
+- **Dependencias:** las notebooks 01 a 09 solo necesitan la sección base de `requirements.txt` (NumPy, SciPy, Matplotlib y Plotly). Qiskit, PennyLane y PyTorch son más pesadas y solo las usan las notebooks 10 y 11.
+- **Hardware cuántico real (10 y 11):** las notebooks corren en simuladores locales (Qiskit Aer y PennyLane). Las celdas que envían circuitos a hardware real de IBM necesitan un token de [IBM Quantum](https://quantum.ibm.com/account): reemplaza el marcador `TU_TOKEN_AQUI` o `PEGA_TU_TOKEN_AQUI` por el tuyo y no lo subas al repositorio.
 
-## Contribuir
+## Repositorios relacionados
 
-- Mantén las notebooks reproducibles: ejecuta todas las celdas en orden antes de guardar.
-- Agrega una explicación breve antes de cada bloque de código importante.
-- Sigue la numeración y la carpeta del área al agregar una notebook nueva.
+- [math-for-ml](https://github.com/astorress/math-for-ml): álgebra lineal, sistemas de ecuaciones, cálculo vectorial y estadística para ML.
+- [ml-from-scratch](https://github.com/astorress/ml-from-scratch): Machine Learning, Deep Learning y Reinforcement Learning implementados desde cero.
+- [data-science-lab](https://github.com/astorress/data-science-lab): casos prácticos de data science aplicado con librerías.
