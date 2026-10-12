@@ -79,9 +79,3 @@ También puedes abrir cualquier notebook en [Google Colab](https://colab.researc
 
 - **Dependencias:** las notebooks 01 a 09 solo necesitan la sección base de `requirements.txt` (NumPy, SciPy, Matplotlib y Plotly). Qiskit, PennyLane y PyTorch son más pesadas y solo las usan las notebooks 10 y 11.
 - **Hardware cuántico real (10 y 11):** las notebooks corren en simuladores locales (Qiskit Aer y PennyLane). Las celdas que envían circuitos a hardware real de IBM necesitan un token de [IBM Quantum](https://quantum.ibm.com/account): reemplaza el marcador `TU_TOKEN_AQUI` o `PEGA_TU_TOKEN_AQUI` por el tuyo y no lo subas al repositorio.
-
-## Repositorios relacionados
-
-- [math-for-ml](https://github.com/astorress/math-for-ml): álgebra lineal, sistemas de ecuaciones, cálculo vectorial y estadística para ML.
-- [ml-from-scratch](https://github.com/astorress/ml-from-scratch): Machine Learning, Deep Learning y Reinforcement Learning implementados desde cero.
-- [data-science-lab](https://github.com/astorress/data-science-lab): casos prácticos de data science aplicado con librerías.
